@@ -8,6 +8,7 @@
         <title>{% block title %}La Muracciola{% endblock %}</title>
         {% block stylesheets %}
             <link href="{{ asset('css/general.css') }}" rel="stylesheet" /> 
+            <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" /> 
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
@@ -15,7 +16,7 @@
         <div class="header">
             <div class="container">
                         {#<a href="{{ path('muracciola_main_homepage') }}"> #}
-                            <img class="img-responsive logo" src="{{ asset('bundles/muracciolamain/images/logogrande.png') }}" alt="La Muracciola" />
+                            <img class="img-responsive logo" src="{{ asset('images/logogrande.png') }}" alt="La Muracciola" />
                         </a>
             </div>
             <div class="navigation">
