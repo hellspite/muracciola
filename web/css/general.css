@@ -1,0 +1,174 @@
+html{
+    min-height:100%;
+    position:relative;
+}
+
+body{
+    background: url('../images/bg3.jpg');
+    color:#ccc;
+    font-family: "Droid Sans",Arial,Helvetica,sans-serif !important;
+    margin-bottom:50px !important;
+    margin-top:0;
+}
+
+.header{
+    margin-top:20px;
+}
+
+.navbar-default{
+    background: none !important;
+    border: none !important;
+    box-shadow:none !important;
+}
+
+.navigation{
+    width:100%;
+    background-color: rgba(138, 74, 10, 0.6) !important;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+.in-nav{
+    height:50px;
+    text-align:center !important;
+}
+
+.navbar-default a{
+    font-family: "Droid Sans",Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    padding:15px 20px !important;
+    text-transform:uppercase;
+    font-size:12px;
+    color:#fff !important;
+}
+
+.navbar-default a:hover{
+    background-color:#852E09 !important;
+}
+
+.footer{
+    background-color:rgba(138, 74, 10, 0.6) !important;
+    font-family: "Droid Sans",Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    font-size:11px;
+    color:#fff;
+    text-transform:uppercase;
+    text-align:center;
+    width:100%;
+    padding:20px;
+    bottom:0 !important;
+    height:50px;
+    position:absolute;
+}
+
+.home-slide{
+    max-width:600px;
+    text-align:center;
+    border:40px solid transparent;
+    padding:0;
+    border-image:url('../images/cornice.png') 40 stretch;
+}
+
+.home-desc{
+    line-height:32px;
+    font-size:21px;
+    font-weight:400;
+    padding:0 5px 30px;
+    max-width:860px;
+    margin-top:20px;
+}
+
+.news-box{
+    max-width:800px !important;
+}
+
+.panel-body{
+    color:#666 !important;
+}
+
+ul.gallery{
+    padding:0;
+    margin:0;
+}
+
+ul.gallery li{
+    list-style:none;
+    margin-bottom:25px;
+}
+
+ul.menu li{
+    list-style:none;
+    margin-bottom:25px;
+}
+
+.dish-image{
+    clear:both;
+    margin-bottom:20px;
+}
+
+.contatti{
+    text-align:center;
+    margin:20px;
+}
+
+.form-contatti{
+    max-width:700px;
+    margin-bottom:60px;
+}
+
+.login-form{
+    text-align:center;
+    margin-top:40px;
+}
+
+.login-form input{
+    color:#000;
+}
+
+.login-form button{
+    color:#000;
+}
+
+/* menu per cellulari */
+@media (max-width:767px){
+    .navbar-default {
+        background-color: rgba(138, 74, 10, 0.6) !important;
+        border-color: #E7E7E7;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #777;
+    }
+
+    .navbar{
+        z-index:10;
+        position:absolute;
+        width:100px;
+    }
+}
+
+.nav-collapse .nav > li > a,
+.nav-collapse .dropdown-menu a {
+font-weight:        bold;
+color:              #fafafa;   /* Adjust Text Color Level 2 */
+text-shadow:        none;
+}
+
+/* Flexible iFrame */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
