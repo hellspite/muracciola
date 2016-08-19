@@ -8,7 +8,9 @@
         <title>{% block title %}La Muracciola{% endblock %}</title>
         {% block stylesheets %}
             <link href="{{ asset('css/general.css') }}" rel="stylesheet" /> 
-            <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" /> 
+            {% stylesheets '@bootstrap_css' %}
+                <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+            {% endstylesheets %}
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
@@ -60,6 +62,9 @@
 
         {% block javascripts %}
             <script type="text/javascript" src="{{ asset('js/jquery-3.1.0.min.js') }}">
+            {% javascripts '@bootstrap_js' %}
+                 <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
         {% endblock %}
     </body>
 </html>
