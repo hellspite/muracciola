@@ -5,7 +5,7 @@ html{
 
 body{
     background: url('../images/bg3.jpg');
-    color:#ccc;
+    color:#ccc !important;
     font-family: "Droid Sans",Arial,Helvetica,sans-serif !important;
     margin-bottom:50px !important;
     margin-top:0;
