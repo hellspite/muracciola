@@ -61,9 +61,9 @@
         </footer>
 
         {% block javascripts %}
-            <script type="text/javascript" src="{{ asset('js/jquery-3.1.0.min.js') }}">
+            <script type="text/javascript" src="{{ asset('js/jquery-3.1.0.min.js') }}"></script>
             {% javascripts '@bootstrap_js' %}
-                 <script src="{{ asset_url }}"></script>
+                 <script type="text/javascript" src="{{ asset_url }}"></script>
             {% endjavascripts %}
         {% endblock %}
     </body>
