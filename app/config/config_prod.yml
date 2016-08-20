@@ -19,3 +19,5 @@ monolog:
             level: debug
         console:
             type:  console
+parameters:
+    delivery_address: lamuracciola@alice.it
