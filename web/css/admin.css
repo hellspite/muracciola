@@ -1,0 +1,26 @@
+.admin-container{
+
+background-color: rgba(200, 200, 200, 0.3);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+.border-radius: 5px;
+                  
+}
+
+ul.admin-actions{
+
+    list-style-type:none;
+
+}
+
+ul.admin-actions li{
+
+    margin-top:10px;
+
+}
+
+ul.admin-actions li a{
+
+    width:120px;
+
+}
