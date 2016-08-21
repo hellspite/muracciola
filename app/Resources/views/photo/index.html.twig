@@ -1,39 +1,36 @@
-{% extends 'base.html.twig' %}
+{% extends 'admin/admin.html.twig' %}
 
 {% block body %}
-    <h1>Photo list</h1>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Image</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for photo in photos %}
-            <tr>
-                <td><a href="{{ path('admin_gallery_show', { 'id': photo.id }) }}">{{ photo.id }}</a></td>
-                <td>{{ photo.image }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('admin_gallery_show', { 'id': photo.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('admin_gallery_edit', { 'id': photo.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <ul>
-        <li>
-            <a href="{{ path('admin_gallery_new') }}">Create a new entry</a>
-        </li>
-    </ul>
+    <div class="admin-container">
+        <div class="modal-header">
+            <h1>Foto</h1>
+        </div>
+    
+        <div class="modal-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for photo in photos %}
+                    <tr>
+                        <td><img src="{{ asset(['images/gallery/', photo.image] | join ) }}" class="admin-thumb" /></td>
+                        <td>
+                            <ul class="admin-actions">
+                                <li>
+                                    <a class="btn btn-warning" href="{{ path('admin_gallery_edit', { 'id': photo.id }) }}">Modifica foto</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        
+            <a class="btn btn-success" href="{{ path('admin_gallery_new') }}">Aggiungi foto</a>
+        </div>
+    </div>
 {% endblock %}

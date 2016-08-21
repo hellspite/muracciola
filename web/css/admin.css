@@ -1,9 +1,9 @@
 .admin-container{
 
-background-color: rgba(200, 200, 200, 0.3);
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-.border-radius: 5px;
+    background-color: rgba(200, 200, 200, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    .border-radius: 5px;
                   
 }
 
@@ -35,5 +35,11 @@ ul.admin-actions-show{
     
     margin-left:0;
     padding-left:0;
+
+}
+
+.admin-thumb{
+
+    max-width:220px;
 
 }
