@@ -8,7 +8,9 @@
     
         <div class="modal-body">
             {{ form_start(edit_form) }}
-                {{ form_widget(edit_form) }}
+                {{ form_row(edit_form.date, {'label':'Data'}) }}
+                {{ form_row(edit_form.title, {'label':'Titolo'}) }}
+                {{ form_row(edit_form.text, {'label':'Testo'}) }}
                 <input class="btn btn-warning" type="submit" value="Modifica" />
             {{ form_end(edit_form) }}
         
