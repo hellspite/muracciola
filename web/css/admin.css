@@ -24,3 +24,16 @@ ul.admin-actions li a{
     width:120px;
 
 }
+
+th.admin-th{
+    
+    width:10%;
+
+}
+
+ul.admin-actions-show{
+    
+    margin-left:0;
+    padding-left:0;
+
+}
