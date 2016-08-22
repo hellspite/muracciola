@@ -7,7 +7,7 @@
         </div>
     
         <div class="modal-body">
-            <table>
+            <table class="admin-gallery-table">
                 <thead>
                     <tr>
                         <th>Foto</th>
@@ -30,7 +30,9 @@
                 </tbody>
             </table>
         
-            <a class="btn btn-success" href="{{ path('admin_gallery_new') }}">Aggiungi foto</a>
+            <div style="margin-top:20px;">
+                <a class="btn btn-success" href="{{ path('admin_gallery_new') }}">Aggiungi foto</a>
+            </div>
         </div>
     </div>
 {% endblock %}
