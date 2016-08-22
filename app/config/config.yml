@@ -114,3 +114,7 @@ vich_uploader:
             upload_destination: '%kernel.root_dir%/../web/images/gallery'
 
             delete_on_remove: true
+
+ivory_ck_editor:
+    configs:
+        muracciola_config:

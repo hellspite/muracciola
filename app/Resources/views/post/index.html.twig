@@ -22,7 +22,7 @@
                     <tr>
                         <td>{% if post.date %}{{ post.date|date('d-m-Y') }}{% endif %}</td>
                         <td>{{ post.title }}</td>
-                        <td>{{ post.text }}</td>
+                        <td>{{ post.text|raw }}</td>
                         <td>
                             <ul class="admin-actions">
                                 <li>

@@ -6,6 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Ivory\CKEditorBundle\Form\Type\CKEditorType;
 
 class PostType extends AbstractType
 {
@@ -20,7 +21,9 @@ class PostType extends AbstractType
                 'widget' => 'single_text' 
             ])
             ->add('title')
-            ->add('text')
+            ->add('text', CKEditorType::class, array(
+                'config_name' => 'muracciola_config'
+            ))
         ;
     }
     
