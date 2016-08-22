@@ -1,16 +1,22 @@
-{% extends 'base.html.twig' %}
+{% extends 'admin/admin.html.twig' %}
 
 {% block body %}
-    <h1>Photo creation</h1>
-
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('admin_gallery_index') }}">Back to the list</a>
-        </li>
-    </ul>
+    <div class="admin-container">
+        <div class="modal-header">
+            <h1>Nuova foto</h1>
+        </div>
+    
+        <div class="modal-body">
+            {{ form_start(form) }}
+                {{ form_widget(form) }}
+                <input class="btn btn-success" type="submit" value="Carica" />
+            {{ form_end(form) }}
+        
+            <ul class="admin-actions admin-actions-show">
+                <li>
+                    <a class="btn btn-success" href="{{ path('admin_gallery_index') }}">Torna alla lista</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 {% endblock %}
