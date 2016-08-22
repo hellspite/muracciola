@@ -38,6 +38,7 @@ twig:
     strict_variables: "%kernel.debug%"
     form_themes:
         - bootstrap_3_layout.html.twig
+        - 'VichUploaderBundle:Form:fields.html.twig'
 
 # Doctrine Configuration
 doctrine:
@@ -104,3 +105,12 @@ assetic:
             inputs:
                 - '%kernel.root_dir%/../vendor/twbs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'
             output: "fonts/glyphicons-halflings-regular.woff2"
+
+vich_uploader:
+    db_driver: orm
+    mappings:
+        photo_image:
+            uri_prefix:         /images/gallery
+            upload_destination: '%kernel.root_dir%/../web/images/gallery'
+
+            delete_on_remove: true
