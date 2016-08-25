@@ -1,0 +1,35 @@
+{% extends 'admin/admin.html.twig' %}
+
+{% block body %}
+    <div class="admin-container">
+        <div class="modal-header">
+            <h1>Menù</h1>
+        </div>
+    
+        <div class="modal-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Testo</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for menu in menus %}
+                    <tr>
+                        <td>{{ menu.text|raw }}</td>
+                        <td>
+                            <ul class="admin-actions">
+                                <li>
+                                    <a class="btn btn-warning" href="{{ path('admin_menu_edit', { 'id': menu.id }) }}">Modifica</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        
+        </div>
+    </div>
+{% endblock %}

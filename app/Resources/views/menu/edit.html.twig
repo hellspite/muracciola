@@ -1,0 +1,18 @@
+{% extends 'admin/admin.html.twig' %}
+
+{% block body %}
+    <div class="admin-container">
+        <div class="modal-header">
+            <h1>Modifica Menù</h1>
+        </div>
+    
+        <div class="modal-body">
+            {{ form_start(edit_form) }}
+                {{ form_row(edit_form.text, {'label': 'Testo'}) }}
+                {{ form_row(edit_form.isVisible, {'label': 'Visibile'}) }}
+                <input class="btn btn-warning" type="submit" value="Edit" />
+            {{ form_end(edit_form) }}
+        
+        </div>
+    </div>
+{% endblock %}
