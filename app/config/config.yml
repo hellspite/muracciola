@@ -118,3 +118,5 @@ vich_uploader:
 ivory_ck_editor:
     configs:
         muracciola_config:
+            toolbar: [["Bold", "Italic", "Underline", "Strike"], ["Link", "Unlink"], ['NumberedList', 'BulletedList'], ['Styles', 'Format'], ['Image']]
+            language: 'it'
