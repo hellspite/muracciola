@@ -22,7 +22,14 @@ class PostType extends AbstractType
             ])
             ->add('title')
             ->add('text', CKEditorType::class, array(
-                'config_name' => 'muracciola_config'
+                'config_name' => 'muracciola_config',
+                'config' => array(
+                    'filebrowserBrowseRoute' => 'elfinder',
+                    'filebrowserBrowseRouteParameters' => array(
+                        'instance' => 'default',
+                        'homeFolder' => ''
+                    )
+                ),
             ))
         ;
     }
