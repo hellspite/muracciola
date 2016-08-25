@@ -12,7 +12,7 @@ use AppBundle\Form\PostType;
 /**
  * Post controller.
  *
- * @Route("/admin/news")
+ * @Route("/admin")
  */
 class PostController extends Controller
 {
@@ -36,7 +36,7 @@ class PostController extends Controller
     /**
      * Creates a new Post entity.
      *
-     * @Route("/new", name="admin_news_new")
+     * @Route("/news/new", name="admin_news_new")
      * @Method({"GET", "POST"})
      */
     public function newAction(Request $request)
@@ -62,7 +62,7 @@ class PostController extends Controller
     /**
      * Finds and displays a Post entity.
      *
-     * @Route("/{id}", name="admin_news_show")
+     * @Route("/news/{id}", name="admin_news_show")
      * @Method("GET")
      */
     public function showAction(Post $post)
@@ -78,7 +78,7 @@ class PostController extends Controller
     /**
      * Displays a form to edit an existing Post entity.
      *
-     * @Route("/{id}/edit", name="admin_news_edit")
+     * @Route("/news/{id}/edit", name="admin_news_edit")
      * @Method({"GET", "POST"})
      */
     public function editAction(Request $request, Post $post)
@@ -105,7 +105,7 @@ class PostController extends Controller
     /**
      * Deletes a Post entity.
      *
-     * @Route("/{id}", name="admin_news_delete")
+     * @Route("/news/{id}", name="admin_news_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, Post $post)
