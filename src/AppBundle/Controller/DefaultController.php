@@ -13,9 +13,13 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
+        $menu = $this->getDoctrine()
+            ->getRepository('AppBundle:Menu')
+            ->findOneBy(['id' => 1]);
+
+
         return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
+            'menu' => $menu
         ]);
     }
 }
