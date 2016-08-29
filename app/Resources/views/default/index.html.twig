@@ -4,18 +4,21 @@
 
     {% if menu.isvisible %}
 
-        <div class="container">
 
-            {{ include('default/carousel.html.twig') }}
+        <div class="row">
             
-            <div class="container">
+            <div class="col-md-8 box-home">
+                {{ include('default/carousel.html.twig') }}
+            </div>
+            
 
+            <div class="col-md-4 box-home">
                 <h1>Menù</h1>
                 {{ menu.text|raw }}
-
             </div>
 
         </div>
+
     {% else %}
 
         {{ include('default/carousel.html.twig') }}
