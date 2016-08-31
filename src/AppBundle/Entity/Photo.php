@@ -109,5 +109,11 @@ class Photo
     {
         return $this->image;
     }
+
+    public function setUpdatedAt($date){
+
+        $this->updatedAt = $date;
+
+    }
 }
 
