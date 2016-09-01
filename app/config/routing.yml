@@ -3,3 +3,5 @@ app:
     type:     annotation
 elfinder:
      resource: "@FMElfinderBundle/Resources/config/routing.yml"
+logout:
+    path: /logout

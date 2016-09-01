@@ -24,6 +24,7 @@ security:
                     - app.security.login_form_authenticator
             logout:
                 path: /logout
+                target: /
 
     encoders:
         AppBundle\Entity\User: bcrypt
